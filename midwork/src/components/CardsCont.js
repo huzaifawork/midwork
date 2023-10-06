@@ -8,7 +8,7 @@ function CardsCont() {
           <div class="carousel-item active " data-bs-interval="10000">
           <div id="wrap1" class="cards-wrapper  d-flex">
               <div class="card" style={{ width: "25rem" }}>
-                <img src="banner1.webp" class="card-img-top" alt="..." />
+                <img src="p1.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Cotton T-Shirt</h5>
                   <p class="card-text">Price: 5$</p>
@@ -18,7 +18,7 @@ function CardsCont() {
                 </div>
               </div>
               <div class="card" style={{ width: "25rem" }}>
-                <img src="banner1.webp" class="card-img-top" alt="..." />
+                <img src="p2.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Cotton T-Shirt</h5>
                   <p class="card-text">Price: 5$</p>
@@ -28,7 +28,7 @@ function CardsCont() {
                 </div>
               </div>
               <div class="card" style={{ width: "25rem" }}>
-                <img src="banner1.webp" class="card-img-top" alt="..." />
+                <img src="p3.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Cotton T-Shirt</h5>
                   <p class="card-text">Price: 5$</p>
@@ -42,7 +42,7 @@ function CardsCont() {
           <div class="carousel-item" data-bs-interval="2000">
             <div id="wrap2" class="cards-wrapper d-flex ">
               <div class="card" style={{ width: "25rem" }}>
-                <img src="banner1.webp" class="card-img-top" alt="..." />
+                <img src="p1.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Cotton T-Shirt</h5>
                   <p class="card-text">Price: 5$</p>
@@ -52,7 +52,7 @@ function CardsCont() {
                 </div>
               </div>
               <div class="card" style={{ width: "25rem" }}>
-                <img src="banner1.webp" class="card-img-top" alt="..." />
+                <img src="p2.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Cotton T-Shirt</h5>
                   <p class="card-text">Price: 5$</p>
@@ -63,7 +63,7 @@ function CardsCont() {
               </div>
 
               <div class="card" style={{ width: "25rem" }}>
-                <img src="banner1.webp" class="card-img-top" alt="..." />
+                <img src="p3.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Cotton T-Shirt</h5>
                   <p class="card-text">Price: 5$</p>
@@ -77,7 +77,7 @@ function CardsCont() {
           <div class="carousel-item">
             <div id="wrap3" class="cards-wrapper d-flex">
               <div class="card" style={{ width: "25rem" }}>
-                <img src="banner1.webp" class="card-img-top" alt="..." />
+                <img src="p1.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Cotton T-Shirt</h5>
                   <p class="card-text">Price: 5$</p>
@@ -88,7 +88,7 @@ function CardsCont() {
               </div>
 
               <div class="card" style={{ width: "25rem" }}>
-                <img src="banner1.webp" class="card-img-top" alt="..." />
+                <img src="p2.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Cotton T-Shirt</h5>
                   <p class="card-text">Price: 5$</p>
@@ -98,7 +98,7 @@ function CardsCont() {
                 </div>
               </div>
               <div class="card" style={{ width: "25rem" }}>
-                <img src="banner1.webp" class="card-img-top" alt="..." />
+                <img src="p3.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Cotton T-Shirt</h5>
                   <p class="card-text">Price: 5$</p>
