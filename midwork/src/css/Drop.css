@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#dropmenu{
+    letter-spacing: 2px;
+    background-color: none;
+    color: rgb(6, 6, 51);
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+#nav1{
+
+    color: rgb(40, 40, 117);
+    
+}
