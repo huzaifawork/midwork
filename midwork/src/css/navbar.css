@@ -1,0 +1,59 @@
+/* Add these styles to your stylesheet */
+
+/* Navbar container */
+.navbar {
+    position: sticky;
+    background-color: #fff; /* Change this to your desired background color */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  /* Container with logo */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust the left and right padding */
+  }
+  
+  /* Logo */
+  img {
+    width: 150px;
+    height: 60px;
+  }
+  
+  /* Search bar */
+  .form-control {
+    width: 100%; /* Fill the available space */
+    max-width: 800px;
+    border: 1px solid #000; /* Change border styles */
+    border-radius: 0;
+  }
+  
+  /* Icons */
+  .fa-magnifying-glass {
+    font-size: 20px;
+    margin-right: 10px; /* Adjust the spacing as needed */
+  }
+  
+  /* Links */
+  .nav-link {
+    text-decoration: none;
+    color: #333; /* Change link color */
+    font-weight: 600; /* Set font weight if needed */
+    margin-right: 20px; /* Adjust the spacing between links */
+    font-size: 16px; /* Change font size */
+    transition: color 0.2s;
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Change link color on hover */
+  }
+  
+  /* Shopping Cart Icon */
+  .fa-bag-shopping {
+    font-size: 24px;
+    margin-right: 10px; /* Adjust the spacing as needed */
+  }
+  
+  

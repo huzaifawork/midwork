@@ -1,19 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-#dropmenu{
-    letter-spacing: 2px;
-    background-color: none;
-    color: rgb(6, 6, 51);
-    display: flex;
-    justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
-    
-    
-}
-#nav1{
+/* Drop.css */
 
-    color: rgb(40, 40, 117);
-    
+#dropmenu {
+  letter-spacing: 2px;
+  background-color: transparent; /* Transparent background */
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%; /* Cover the entire width of the container */
+ /* Add padding as needed */
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
+
+#nav1 {
+  margin-right: 30px; /* Adjust spacing between "KITS" and the menu */
+}
+
+/* Dropdown menu styles */
+.nav-item .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Background color for dropdown menu */
+  min-width: 150px;
+  z-index: 1;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+  margin-top: 10px; /* Adjust the spacing between menu items and dropdown */
+  padding: 10px;
+}
+
+.nav-item .dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0; /* Adjust spacing between dropdown items */
+}
+
+.nav-item .dropdown-menu a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+#playerdrop :hover{
+  display: flex;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #dropmenu {
+    flex-direction: column; /* Stack items vertically */
+    align-items: start;
+  }
+
+  #nav1 {
+    margin: 10px 0; /* Add space around "KITS" */
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+}
+

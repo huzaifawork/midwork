@@ -1,0 +1,48 @@
+/* about.css */
+
+.heading h1 {
+   font-size: 55px;
+   color: rgb(65, 50, 50);
+   margin-left: auto;
+   margin-top: -20px;
+ }
+ 
+ #con {
+   margin-top: 50px;
+ }
+ 
+ .container {
+   display: flex;
+   flex-direction: column;
+   
+   width: 90%;
+   margin: 0 auto;
+ }
+ 
+ .hero-section {
+   width: 100%;
+   max-width: 1000px; /* Increase the width to control the number of words per line */
+max-height: 200px;
+margin-left: -500px;
+   font-size: 20px;
+   
+   text-align: center;
+   margin-top: 20px;
+ }
+ 
+ .hero-section h2 {
+   font-size: 38px;
+   margin-bottom: 20px;
+   color: #000000;
+ }
+ 
+ hero-section p {
+   font-size: 20px;
+   line-height: 1.5;
+   margin-bottom: 40px;
+   
+   text-align: left;
+ }
+
+ 
+ 

@@ -1,0 +1,112 @@
+/* Sidebar (Dashboardi) */
+
+
+/* Main Content (Dashboardj) */
+#content {
+  margin-left: 2%; 
+  border: 1px solid grey;/* Width of the sidebar */
+}
+
+/* Header */
+#content .navbar {
+  background: #ecf0f1;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+/* Rows for cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+/* Cards within rows */
+.col-lg-6 {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+/* Adjust the width and font size for card text */
+.card {
+  border: 1px solid #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 10px;
+  background-color: #fff;
+  width: 80%; /* Reduce the card width */
+}
+
+.card-text {
+  font-size: 20px; /* Reduce the font size of card text */
+  margin-top: 10px;
+  color: #34495e;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+/* Hover effect for cards */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Active sidebar link */
+#sidebar .active a {
+  background: #2c3e50;
+}
+
+/* Logout button */
+#sidebar .btn-danger {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+#sidebar .btn-danger:hover {
+  background: #c0392b;
+}
+
+.card-text {
+  font-size: 36px;
+  margin-top: 10px;
+  color: #34495e; /* Custom card text color */
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Active sidebar link */
+#sidebar .active a {
+  background: #2c3e50;
+}
+
+/* Logout button */
+#sidebar .btn-danger {
+  background: #e74c3c; /* Custom logout button background color */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+#sidebar .btn-danger:hover {
+  background: #c0392b; /* Hover color for logout button */
+}
+
+
