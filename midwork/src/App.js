@@ -24,6 +24,7 @@ import SignupComponent from './components/SignupUser';
 import ProfileComponent from './components/Profile';
 import ViewUserPage from './components/ViewUser';
 import DeleteComponent from './components/DeleteUser';
+import Analytics from './components/Analytics';
 
 export const Data = createContext();
 
@@ -35,15 +36,13 @@ function App() {
   return (
     <Data.Provider value={{ parg, cart, setcart, productList, setProductList }}>
       <>
-        <Header />
-        <Navbar />
-        <DropMenu />
+        
         <Routes>
           <Route path='/dashboard/viewproduct' element={<See />} />
           <Route path='/about' element={<Aboutus />} />
           <Route path='/tohome' element={<Home />} />
           <Route path='/' element={<Home />} />
-          <Route path='/admin' element={<Dashboardj />} />
+          <Route path='/admin' element={<Analytics />} />
           <Route path='/dashboard/addproduct' element={<Addp />} />
           <Route path='/dashboard/deleteproduct' element={<Delp />} />
           <Route path='/dashboard/updateproduct' element={<Enchance />} />
@@ -61,10 +60,12 @@ function App() {
           <Route path='/signup' element={<SignupComponent />} />
           <Route path='/deleteuser' element={<DeleteComponent />} />
         </Routes>
-        <Footer />
+        
       </>
     </Data.Provider>
   );
 }
 
 export default App;
+
+

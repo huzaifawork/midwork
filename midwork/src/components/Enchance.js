@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Dashboardj from '../components/Dashboardj'; // Import your Dashboardj component
 
 function UpdateProduct() {
   const [productId, setProductId] = useState('');
@@ -39,43 +40,62 @@ function UpdateProduct() {
   };
 
   return (
-    <div className='container mt-5'>
-      <div className='card p-4' style={{ maxWidth: '500px', borderRadius: '15px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', backgroundColor: '#f8f9fa' }}>
-        <h1 className='mb-4 text-center'>Update Product</h1>
-        <label className='form-label mb-2'>Product ID to Update:</label>
-        <div className='input-group mb-3'>
-          <input
-            type='text'
-            className='form-control'
-            value={productId}
-            onChange={(e) => setProductId(e.target.value)}
-          />
-          <button className='btn btn-primary' onClick={handleFetchDetails} disabled={loading}>
-            {loading ? 'Fetching...' : 'Fetch Details'}
-          </button>
+    <div className='container-fluid mt-5'>
+      <div className='row'>
+        {/* Dashboard */}
+        <div className='col-lg-2' style={{ padding: 0 , marginTop:"-45px",marginLeft:"-10px"}}>
+          {/* Include the Dashboard content here */}
+          <Dashboardj />
         </div>
-        <label className='form-label mb-2'>Product Name:</label>
-        <input type='text' className='form-control mb-3' name='ProductName' value={productData.ProductName} onChange={handleInputChange} />
-        <label className='form-label mb-2'>Product Description:</label>
-        <input type='text' className='form-control mb-3' name='ProductDescription' value={productData.ProductDescription} onChange={handleInputChange} />
-        <label className='form-label mb-2'>Product Category:</label>
-        <input type='text' className='form-control mb-3' name='ProductCategory' value={productData.ProductCategory} onChange={handleInputChange} />
-        <label className='form-label mb-2'>Product Price:</label>
-        <input type='text' className='form-control mb-3' name='ProductPrice' value={productData.ProductPrice} onChange={handleInputChange} />
-        <label className='form-label mb-2'>Product Image:</label>
-        <input type='text' className='form-control mb-3' name='ProductImage' value={productData.ProductImage} onChange={handleInputChange} />
-        <button className='btn btn-warning form-control' onClick={handleUpdate}>
-          Update Product
-        </button>
+
+        {/* UpdateProduct Content */}
+        <div className='col-lg-6'>
+          <div className='container'>
+            <div className='card p-4' style={{ width:"800px", borderRadius: '15px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', backgroundColor: '#f8f9fa' , marginTop:"50px", marginLeft:"150px"}}>
+              <h1 className='mb-4 text-center'>Update Product</h1>
+              <div className='mb-3'>
+                <label className='form-label'>Product ID to Update:</label>
+                <div className='input-group'>
+                  <input
+                    type='text'
+                    className='form-control'
+                    value={productId}
+                    onChange={(e) => setProductId(e.target.value)}
+                  />
+                  <button className='btn btn-primary' onClick={handleFetchDetails} disabled={loading}>
+                    {loading ? 'Fetching...' : 'Fetch Details'}
+                  </button>
+                </div>
+              </div>
+              <div className='mb-3'>
+                <label className='form-label'>Product Name:</label>
+                <input type='text' className='form-control' name='ProductName' value={productData.ProductName} onChange={handleInputChange} />
+              </div>
+              <div className='mb-3'>
+                <label className='form-label'>Product Description:</label>
+                <input type='text' className='form-control' name='ProductDescription' value={productData.ProductDescription} onChange={handleInputChange} />
+              </div>
+              <div className='mb-3'>
+                <label className='form-label'>Product Category:</label>
+                <input type='text' className='form-control' name='ProductCategory' value={productData.ProductCategory} onChange={handleInputChange} />
+              </div>
+              <div className='mb-3'>
+                <label className='form-label'>Product Price:</label>
+                <input type='text' className='form-control' name='ProductPrice' value={productData.ProductPrice} onChange={handleInputChange} />
+              </div>
+              <div className='mb-3'>
+                <label className='form-label'>Product Image:</label>
+                <input type='text' className='form-control' name='ProductImage' value={productData.ProductImage} onChange={handleInputChange} />
+              </div>
+              <button className='btn btn-warning form-control' onClick={handleUpdate}>
+                Update Product
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
 export default UpdateProduct;
-
-
-
-
-
-

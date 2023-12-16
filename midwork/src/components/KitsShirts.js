@@ -20,6 +20,7 @@ function KitsShirts() {
 
   return (
     <div className="container">
+    
       <h1 className="text-center mt-4 mb-4" style={{ textAlign: "center", margin: "auto", color: "darkblue", fontSize: "40px" }}>Kits & Shirts</h1>
       <div className="row">
         {productList.map((product) => (

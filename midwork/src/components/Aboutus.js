@@ -3,7 +3,9 @@ import "../css/about.css";
 
 function Aboutus() {
   return (
+    
     <div id="con" className="container">
+    
       <div className="heading">
         <h1>About Us</h1>
       </div>
