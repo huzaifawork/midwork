@@ -25,6 +25,7 @@ import ProfileComponent from './components/Profile';
 import ViewUserPage from './components/ViewUser';
 import DeleteComponent from './components/DeleteUser';
 import Analytics from './components/Analytics';
+import axios from 'axios';
 
 export const Data = createContext();
 
@@ -32,7 +33,8 @@ function App() {
   const [parg, setparg] = useState("Price:");
   const [cart, setcart] = useState(0);
   const [productList, setProductList] = useState([]); // Define productList state
-
+  axios.defaults.withCredentials=true;
+  axios.post('https://midwork-silk.vercel.app/');
   return (
     <Data.Provider value={{ parg, cart, setcart, productList, setProductList }}>
       <>
