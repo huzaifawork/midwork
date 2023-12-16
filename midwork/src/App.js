@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import axios from "axios";
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -32,7 +33,8 @@ function App() {
   const [parg, setparg] = useState("Price:");
   const [cart, setcart] = useState(0);
   const [productList, setProductList] = useState([]); // Define productList state
-
+axios.defaults.withCredentials=true;
+  axios.post('https://midwork-silk.vercel.app/');
   return (
     <Data.Provider value={{ parg, cart, setcart, productList, setProductList }}>
       <>
