@@ -20,7 +20,11 @@ app.use(cors(
         methods:["POST","GET"],
         credentials:true
     }
+
 ));
+app.get("/",(req,res)=>{
+    res.json("Hello");
+})
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', products);
