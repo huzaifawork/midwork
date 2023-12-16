@@ -42,7 +42,7 @@ function KitsShirts() {
               </div>
             </div>
           </div>
-        ))}
+        ))} 
       </div>
     </div>
   );
