@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { url } from '../services/api'; 
 function KitsShirts() {
   const [productList, setProductList] = useState([]);
 
@@ -11,9 +11,7 @@ function KitsShirts() {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/dashboard/addproduct');
-
-
+      const response = await axios.get(`${url}/dashboard/addproduct`);
       setProductList(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);
