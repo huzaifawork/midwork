@@ -14,14 +14,12 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 .catch(()=> console.log('not conncted'));
 
 app.listen(5000);
-app.use(cors(
-    {
-        origin:["https://midwork-frontend.vercel.app"],
-        methods:["POST","GET"],
-        credentials:true
-    }
+app.use(cors({
+    origin: "https://midwork-frontend.vercel.app",
+    methods: ["POST", "GET"],
+    credentials: true
+}));
 
-));
 app.get("/",(req,res)=>{
     res.json("Hello");
 })

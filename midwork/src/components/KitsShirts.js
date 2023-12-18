@@ -12,6 +12,8 @@ function KitsShirts() {
   const fetchProducts = async () => {
     try {
       const response = await axios.get('http://localhost:5000/dashboard/addproduct');
+
+
       setProductList(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);
