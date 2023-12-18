@@ -1,16 +1,16 @@
 import React from 'react';
-
+import '../css/about.css';
 
 function Aboutus() {
   return (
-    <div id="con" className="container text-center">
+    <div id="con" className="container text-center bg-white" >
       <div className="heading">
         <h1>About Us</h1>
       </div>
 
-      <div className="hero-section">
-        <h2 style={{marginLeft:"600px"}}>Welcome To Our Shop</h2>
-        <p style={{ color: 'black' , marginLeft:"600px"}}>
+      <div className="hero-section" style={{marginLeft:"50px"}}>
+        <h2>Welcome To Our Shop</h2>
+        <p style={{ color: 'black' }}>
           This shop is dedicated to providing you with the best selection of items related to style, fashion, and sports. We've created a user-friendly environment to ensure you have the best shopping experience, including a hassle-free returns and refund policy. Feel free to share your reviews of the items you purchase here. We offer worldwide delivery to your specified location, and we accept a variety of international payment methods. <b>Thank You</b>
         </p>
       </div>
