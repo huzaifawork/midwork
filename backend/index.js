@@ -16,7 +16,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 app.listen(5000);
 app.use(cors({
     origin: "https://midwork-frontend.vercel.app", // Update to your frontend URL
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET","PUT","DELETE"],
     credentials: true
   }));
 
