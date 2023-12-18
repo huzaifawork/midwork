@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Dashboardj from '../components/Dashboardj'; // Import your Dashboardj component
-
+import { url } from '../services/api';
 function UpdateProduct() {
   const [productId, setProductId] = useState('');
   const [productData, setProductData] = useState({
@@ -19,7 +19,7 @@ function UpdateProduct() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`http://localhost:5000/dashboard/updateproduct/${productId}`, productData);
+      await axios.put(`${url}/dashboard/updateproduct/${productId}`, productData);
       console.log('Product updated successfully!');
     } catch (error) {
       console.error('Error updating product:', error);

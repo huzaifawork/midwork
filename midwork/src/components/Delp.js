@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { url } from '../services/api'; 
 import Dashboardj from './Dashboardj';
 function Delp() {
   const [productId, setProductId] = useState('');
@@ -11,7 +12,7 @@ function Delp() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/dashboard/deleteproduct/${productId}`);
+      await axios.delete(`${url}/dashboard/deleteproduct/${productId}`);
       console.log('Product deleted successfully!');
       // Optionally, clear the form or update the list of products after deletion
       setProductId('');
@@ -20,10 +21,10 @@ function Delp() {
       console.error('Error deleting product:', error);
     }
   };
-
+  
   const handleFetchDetails = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/dashboard/getproduct/${productId}`);
+      const response = await axios.get(`${url}/dashboard/getproduct/${productId}`);
       setProductDetails(response.data);
     } catch (error) {
       console.error('Error fetching product details:', error);
