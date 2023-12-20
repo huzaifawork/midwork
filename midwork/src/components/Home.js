@@ -7,6 +7,7 @@ import Kits from './Kits'
 import Bags from './Bags'
 import Navbar from './Navbar'
 import Header from './Header'
+import Footer from './Footer'
 
 function Home() {
   return (
@@ -22,9 +23,11 @@ function Home() {
     <Kits/>
 
     <Bags/> 
+    <Footer/>
+    
     </div>
     
   )
 }
 
-export default Home
+export default Home;
