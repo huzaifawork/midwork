@@ -17,7 +17,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 .catch(()=> console.log('not conncted'));
 const PORT = process.env.PORT || 3000;
 app.use(cors({
-    origin: 'https://midwork-frontend.vercel.app', // Update to your frontend URL
+    origin: 'https://midwork-silk.vercel.app/', // Update to your frontend URL
     methods: ["POST", "GET","PUT","DELETE"],
     credentials: true
   }));
