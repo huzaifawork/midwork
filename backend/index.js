@@ -63,9 +63,9 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
-import userRoutes from './routes/AddingUser.js';
-import jwt from 'jsonwebtoken';
-import UserModel from "./models/AddingUser.js";
+// import userRoutes from './routes/AddingUser.js';
+// import jwt from 'jsonwebtoken';
+// import UserModel from "./models/AddingUser.js";
 import products from "./routes/AddingProducts.js";
 
 
@@ -89,4 +89,4 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
 app.use('/', products);
-app.use('/',userRoutes);
+// app.use('/',userRoutes);
