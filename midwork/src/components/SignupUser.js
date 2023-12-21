@@ -1,8 +1,13 @@
 // SignupComponent.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import { url } from '../services/api';
+
 
 const SignupComponent = () => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -19,11 +24,11 @@ const SignupComponent = () => {
     e.preventDefault();
 
     try {
-      // Adjust the API endpoint accordingly
-      const response = await axios.post('http://localhost:5000/users/signup', { data: formData });
+      const response = await axios.post(`${url}//users/signup`, { data: formData });
 
       console.log('User registered successfully:', response.data.user);
-      // You can redirect the user or perform other actions after a successful signup
+      // Redirect to login page after successful signup
+      navigate('/login');
     } catch (error) {
       console.error('Error registering user', error);
     }
@@ -33,6 +38,8 @@ const SignupComponent = () => {
     <div>
       <h2>Signup</h2>
       <form onSubmit={handleSubmit}>
+        {/* ... (unchanged code) ... */}
+
         <div className="form-group">
           <label className="text-black">Username:</label>
           <input
@@ -87,7 +94,6 @@ const SignupComponent = () => {
             required
           />
         </div>
-        
         <button type="submit">Sign Up</button>
       </form>
     </div>
@@ -95,3 +101,4 @@ const SignupComponent = () => {
 };
 
 export default SignupComponent;
+

@@ -1,9 +1,12 @@
-// LoginForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { url } from '../services/api';
+
 
 function LoginForm() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -16,15 +19,15 @@ function LoginForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      console.log('Sending login request to http://localhost:5000/users/login with data:', formData);
-      await axios.post('http://localhost:5000/users/login', formData);
+      console.log(`Sending login request to ${url}//users/login with data:`, formData);
+      await axios.post(`${url}//users/login`, formData);
       console.log('Login successful');
-      // You can redirect the user or perform other actions after successful login
+      // Redirect to home page after successful login
+      navigate('/login');
     } catch (error) {
       console.error('Error logging in', error);
     }
   };
-  
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh' }}>
