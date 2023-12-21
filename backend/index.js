@@ -1,8 +1,8 @@
  
+import products from "./routes/AddingProducts.js";
 // import userRoutes from './routes/AddingUser.js';
 // index.js
 import express from 'express';
-import products from "./routes/AddingProducts.js";
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
@@ -17,12 +17,13 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 .catch(()=> console.log('not conncted'));
   
 app.use(cors({
-    origin: "https://midwork-frontend.vercel.app", // Update to your frontend URL
-    methods: ["POST", "GET", "PUT", "DELETE"],
+    origin: 'https://midwork-frontend.vercel.app', // Update to your frontend URL
+    methods: ["POST", "GET","PUT","DELETE"],
     credentials: true
-}));
-
-  
+  }));
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
 app.use(cors);
 app.get("/",(req,res)=>{
   res.json("Hello");
