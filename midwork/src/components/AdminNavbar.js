@@ -37,7 +37,7 @@ const AdminNavbar = () => {
               <a className="nav-link" href="#">
                 <div className="card p-2" style={{ borderRadius: '50%', width: '60px', height: '60px', overflow: 'hidden', border: '2px solid #fff' }}>
                   {/* Use your actual profile image source */}
-                  <img src="pp.jpg" alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' ,marginTop:"-8px", border:"2px solid black"}} />
+                  {/* <img src="pp.jpg" alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' ,marginTop:"-8px", border:"2px solid black"}} /> */}
                 </div>
               </a>
             </li>
