@@ -15,7 +15,7 @@ const url = 'mongodb+srv://mhuzaifatariq7:luckynumber7@cluster0.mjqk6et.mongodb.
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => console.log('connected to the database'))
 .catch(()=> console.log('not conncted'));
-  
+const PORT = process.env.PORT || 3000;
 app.use(cors({
     origin: 'https://midwork-frontend.vercel.app', // Update to your frontend URL
     methods: ["POST", "GET","PUT","DELETE"],
