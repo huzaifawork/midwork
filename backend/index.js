@@ -6,8 +6,8 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
-import UserModel from "./models/AddingUser.js";
-import jwt from 'jsonwebtoken';
+// import UserModel from "./models/AddingUser.js";
+// import jwt from 'jsonwebtoken';
 
 const app = express();
 // index.js (server) 
