@@ -29,7 +29,8 @@ function UpdateProduct() {
   const handleFetchDetails = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:5000/dashboard/getproduct/${productId}`);
+      const response = await axios.get(`${url}/dashboard/getproduct/${productId}`);
+
       const existingProductData = response.data;
       setProductData(existingProductData);
     } catch (error) {
