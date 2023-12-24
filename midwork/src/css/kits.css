@@ -1,107 +1,106 @@
 /* kits.css */
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  #kits {
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    text-align: start;
-    font-size: 100px;
-    color: rgb(12, 21, 31);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  
-  .picture-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-box {
-    display: inline-block;
-    margin: 10px; /* Adjust the margin as needed for spacing */
-    text-align: center;
-  }
-  
-  /* kits.css */
-
-.kit-image {
-  max-width: 100%; /* Change this to a higher value, e.g., max-width: 200%; to make images larger */
-  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
-  .box {
-    width: 500px; /* Adjust the box width as needed */
-    height: auto;
-    background-color: transparent;
-    border: none; /* You can change border styles as needed */
-    margin: 0 auto; /* Center the box horizontally */
-    padding: 10px;
-    margin-top: -40px; /* Adjust the negative margin as needed */
-    z-index: 1; /* Set a higher z-index to ensure it's above the images */
-    font-size: 20px;
-    margin: auto;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: black;
-  }
-  
-  
-  
-  .kit-button {
-    background-color: black;
-    color: white;
-    border: 1px solid grey;
-    padding: 5px 10px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  #kit1{
-    width: 80%;
-    
+#kits {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  text-align: start;
+  font-size: 100px;
+  color: rgb(12, 21, 31);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-  }
-  #kit2{
-    width: 80%;
-  }
-  #kit3{
-    width: 80%;
-  }
+.picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box {
+  display: inline-block;
+  margin: 10px; /* Adjust the margin as needed for spacing */
+  text-align: center;
+}
+
+/* kits.css */
+
+.kit-image {
+max-width: 100%; /* Change this to a higher value, e.g., max-width: 200%; to make images larger */
+height: auto;
+}
+
+.box {
+  width: 500px; /* Adjust the box width as needed */
+  height: auto;
+  background-color: transparent;
+  border: none; /* You can change border styles as needed */
+  margin: 0 auto; /* Center the box horizontally */
+  padding: 10px;
+  margin-top: -40px; /* Adjust the negative margin as needed */
+  z-index: 1; /* Set a higher z-index to ensure it's above the images */
+  font-size: 20px;
+  margin: auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+}
+
+
+
+.kit-button {
+  background-color: black;
+  color: white;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#kit1{
+  width: 80%;
+  
+
+}
+#kit2{
+  width: 80%;
+}
+#kit3{
+  width: 80%;
+}
 #kit4{
-    width:80%;
+  width:80%;
 }
 /* kits.css */
 
 /* Hover animation for images */
 .kit-image {
-    transition: transform 0.2s ease;
-  }
-  
-  .kit-image:hover {
-    transform: scale(1.1); /* Scale the image by 10% on hover */
-    transition: transform 0.2s ease;
-  }
-  
-  /* Hover animation for buttons */
-  .kit-button {
-    transition: background-color 0.2s ease, color 0.2s ease;
-  }
-  
-  .kit-button:hover {
-    background-color: #0056b3; /* Change the background color on hover */
-    color: white;
-  }
-  
-  /* Optional: Add a hover animation for the white box */
-  .box {
-    transition: border-color 0.2s ease;
-  }
-  
-  .box:hover {
-    border-color: #0056b3; /* Change the border color on hover */
-  }
-  
+  transition: transform 0.2s ease;
+}
+
+.kit-image:hover {
+  transform: scale(1.1); /* Scale the image by 10% on hover */
+  transition: transform 0.2s ease;
+}
+
+/* Hover animation for buttons */
+.kit-button {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.kit-button:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+  color: white;
+}
+
+/* Optional: Add a hover animation for the white box */
+.box {
+  transition: border-color 0.2s ease;
+}
+
+.box:hover {
+  border-color: #0056b3; /* Change the border color on hover */
+}

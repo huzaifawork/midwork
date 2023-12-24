@@ -153,4 +153,3 @@ function TrainingClick() {
 }
 
 export default TrainingClick;
-

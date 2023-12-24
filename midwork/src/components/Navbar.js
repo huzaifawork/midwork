@@ -9,7 +9,7 @@ function Navbar() {
   
   return (
     
-    <nav className="navbar navbar-light border-none" style={{ position: "sticky" , height:"15vh"}}>
+    <nav className="navbar navbar-light border-none" style={{ position: "sticky" }}>
     
       <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <Link to="/tohome">
@@ -25,9 +25,6 @@ function Navbar() {
             <i className="fa-solid fa-bag-shopping " style={{ fontSize: "20px", marginLeft: "10px" }}><span class="badge bg-secondary">{cart}</span></i>
           </Link>
          
-        {/* <Link>
-          <button style={{width:"50px", height:"50px"}}></button>
-        </Link> */}
         </div>
       </div>
     </nav>
@@ -35,5 +32,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-

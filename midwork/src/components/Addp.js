@@ -110,9 +110,9 @@ const Addp = () => {
                   />
                 </div>
 
-                 <button className="btn btn-dark form-control text-warning" onClick={(e) => addDesc(e)}>
+                <button className="btn btn-dark form-control text-warning" onClick={(e) => addDesc(e)}>
                   ADD PRODUCT
-                  </button>
+                </button>
               </form>
             </div>
           </div>

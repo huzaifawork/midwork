@@ -42,4 +42,3 @@ const fetchUserDetails = async () => {
 };
 
 export default UserSideView;
-

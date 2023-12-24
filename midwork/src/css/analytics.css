@@ -2,114 +2,113 @@
 
 /* Custom Cards */
 .card {
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Table Card */
-  .card table {
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  .card table th,
-  .card table td {
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .card table th {
-    background-color: #f0f0f0;
-  }
-  
-  /* Status Indicator */
-  .status-indicator {
-    display: inline-block;
-    padding: 2px 6px;
-    font-size: 10px;
-    border-radius: 4px;
-  }
-  
-  .processing {
-    background-color: #ffc107;
-    color: #333;
-  }
-  
-  .completed {
-    background-color: #28a745;
-    color: #fff;
-  }
-  
-  /* Product Activity Table */
-  .card table tbody tr:hover {
-    background-color: #f0f0f0;
-  }
-  
-  /* View Details Button */
-  .card .text-right button {
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    overflow :hidden;
-  }
-  
-  .card .text-right button:hover {
-    background-color: #c82333;
-    overflow: hidden;
-  }
-  
-  /* Sidebar Hover Effects */
-  .sidebar a.nav-link:hover {
-    background-color: #f0f0f0;
-    transition: background-color 0.3s ease;
-    overflow: hidden;
-  }
-  
-  .sidebar a.nav-link.active {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .sidebar a.nav-link.active:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Accordion Hover Effects */
-  .accordion .nav-link:hover {
-    background-color: #f0f0f0;
-    transition: background-color 0.3s ease;
-    overflow: hidden;
-  }
-  
-  .accordion .nav-link.active {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .accordion .nav-link.active:hover {
-    background-color: #0056b3;
-    overflow: hidden;
-  }
-  /* Product Activity Table */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Table Card */
+.card table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.card table th,
+.card table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.card table th {
+  background-color: #f0f0f0;
+}
+
+/* Status Indicator */
+.status-indicator {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+.processing {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.completed {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Product Activity Table */
 .card table tbody tr:hover {
-    background-color: #f0f0f0;
-    overflow: hidden;
-  }
-  
-  .card table tbody td.number-increase {
-    color: #28a745; /* Green color for increasing numbers */
-  }
-  
-  .card table tbody td.number-decrease {
-    color: #dc3545; /* Red color for decreasing numbers */
-  }
-  
-  
+  background-color: #f0f0f0;
+}
+
+/* View Details Button */
+.card .text-right button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  overflow :hidden;
+}
+
+.card .text-right button:hover {
+  background-color: #c82333;
+  overflow: hidden;
+}
+
+/* Sidebar Hover Effects */
+.sidebar a.nav-link:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar a.nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.sidebar a.nav-link.active:hover {
+  background-color: #0056b3;
+}
+
+/* Accordion Hover Effects */
+.accordion .nav-link:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.accordion .nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.accordion .nav-link.active:hover {
+  background-color: #0056b3;
+  overflow: hidden;
+}
+/* Product Activity Table */
+.card table tbody tr:hover {
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.card table tbody td.number-increase {
+  color: #28a745; /* Green color for increasing numbers */
+}
+
+.card table tbody td.number-decrease {
+  color: #dc3545; /* Red color for decreasing numbers */
+}
+

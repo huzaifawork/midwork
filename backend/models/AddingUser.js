@@ -1,13 +1,14 @@
+// // models/user.model.js
 // import mongoose from "mongoose";
 
-// const userSchema = mongoose.Schema({
-//   name: { type: String, required: true },
-//   email: { type: String, required: true },
-//   password: { type: String, required: true },
-//   userType: { type: String, enum: ["user", "admin"], default: "user" }, // Added userType field
-//   id: { type: String },
+// const userSchema = new mongoose.Schema({
+//   username: { type: String, required: true },
+//   email: { type: String, required: true, unique: true },
+//   password: String,
+//   firstName: String,
+//   lastName: String,
 // });
 
-// export default mongoose.model("User", userSchema);
+// const UserModel = mongoose.model("User", userSchema);
 
-
+// export default UserModel;

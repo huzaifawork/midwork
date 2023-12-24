@@ -1,26 +1,25 @@
 
 @media (max-width: 768px) {
-      #header-text{
-        font-size: small;
-      }
-    /* width: 100%; Remove this line to prevent text from breaking */
-  } 
-  @keyframes moveText {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    25% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    50% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
+  #header-text{
+    font-size: small;
   }
-  
+/* width: 100%; Remove this line to prevent text from breaking */
+} 
+@keyframes moveText {
+0% {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+25% {
+  transform: translateX(0);
+  opacity: 1;
+}
+50% {
+  transform: translateX(0);
+  opacity: 1;
+}
+100% {
+  transform: translateX(100%);
+  opacity: 0;
+}
+}

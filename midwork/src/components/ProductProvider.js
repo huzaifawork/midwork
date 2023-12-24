@@ -42,4 +42,3 @@ export const ProductProvider = ({ children }) => {
 
 export { ProductContext };
 export default ProductProvider; // Export the ProductContext
-

@@ -8,7 +8,6 @@
 // }
 import axios from "axios";
 export const url = "https://midwork-silk.vercel.app"; // Update to your backend URL
-// "http://localhost:5000";
 
 export const addproduct = (ProductData) => {
   axios.post(`${url}/dashboard/addproduct`, ProductData);
