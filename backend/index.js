@@ -1,28 +1,34 @@
- 
-import products from "./routes/AddingProducts.js";
-// import userRoutes from './routes/AddingUser.js';
-// index.js
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
+import products from './routes/AddingProducts.js';
+
 const app = express();
-// index.js (server)
+
 const url = 'mongodb+srv://mhuzaifatariq7:luckynumber7@cluster0.mjqk6et.mongodb.net/your-database-name?retryWrites=true&w=majority';
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-.then(() => console.log('connected to the database'))
-.catch(()=> console.log('not conncted'));
+    .then(() => console.log('connected to the database'))
+    .catch(() => console.log('not connected'));
 
-app.listen(5000);
 app.use(cors({
-    origin: "https://midwork-frontend.vercel.app", // Update to your frontend URL
-    methods: ["POST", "GET","PUT","DELETE"],
+    origin: "https://midwork-frontend.vercel.app",
+    methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
-  }));
+}));
 
-app.get("/",(req,res)=>{
-    res.json("Hello");
-})
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Make sure to apply CORS middleware before your routes
 app.use('/', products);
+
+// Your other routes...
+
+app.get("/", (req, res) => {
+    res.json("Hello");
+});
+
+app.listen(5000, () => {
+    console.log('Server is running on port 5000');
+});
